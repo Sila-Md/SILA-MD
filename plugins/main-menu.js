@@ -3,7 +3,7 @@ const { cmd } = require('../command');
 const fs = require('fs');
 
 cmd({
-  pattern: 'menu2',
+  pattern: 'menu',
   desc: 'Show interactive menu system',
   category: 'menu',
   react: '🛸',
@@ -12,7 +12,7 @@ cmd({
   try {
     const userName = m.pushName || 'User';
     const menuCaption = `
-╭━⪨ 𝚂𝙸𝙻𝙰𝚃𝚁𝙸𝚇-𝙼𝙳 ⪩━┈⊷🇹🇿
+╭━⪨ 𝚂𝙸𝙻𝙰-𝙼𝙳 ⪩━┈⊷🇹🇿
 ├ Owner: ${config.OWNER_NAME}
 ├ Type: NodeJs (MD)
 ├ Mode: ${config.MODE}
@@ -41,8 +41,9 @@ cmd({
       forwardingScore: 999,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363398101781980@newsletter',
-        newsletterName: '𝙼𝚁.𝚂𝙸𝙻𝙰',
+        newsletterJid: '120363422610520277@newsletter
+',
+        newsletterName: 'SILA TECH',
         serverMessageId: 143
       }
     };
@@ -51,7 +52,7 @@ cmd({
     const sendImage = async () => {
       try {
         return await conn.sendMessage(from, {
-          image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/a97zm1.jpg' },
+          image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/ftbfm1.jpg' },
           caption: menuCaption,
           contextInfo
         }, { quoted: mek });
