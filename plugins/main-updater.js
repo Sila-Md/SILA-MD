@@ -19,21 +19,21 @@ cmd({
         await reply("*🔍 CHECKING FOR UPDATES...*");
 
         // Fetch the latest commit hash from GitHub
-        const { data: commitData } = await axios.get("https://api.github.com/repos/silatrix2/silatrix-md/commits/main");
+        const { data: commitData } = await axios.get("https://api.github.com/repos/Sila-Md/SILA-MD/commits/main");
         const latestCommitHash = commitData.sha;
 
         // Get the stored commit hash from the database
         const currentHash = await getCommitHash();
 
         if (latestCommitHash === currentHash) {
-            return reply("*✅ YOUR SILATRIX-MD BOT IS ALREADY UP-TO-DATE !*");
+            return reply("*✅ YOUR SILA-MD BOT IS ALREADY UP-TO-DATE !*");
         }
 
-        await reply("*🚀 UPDATING SILATRIX-MD BOT...*");
+        await reply("*🚀 UPDATING SILA-MD BOT...*");
 
         // Download the latest code
         const zipPath = path.join(__dirname, "latest.zip");
-        const { data: zipData } = await axios.get("https://github.com/silatrix2/silatrix-md/archive/main.zip", { responseType: "arraybuffer" });
+        const { data: zipData } = await axios.get("https://github.com/Sila-Md/SILA-MD/archive/main.zip", { responseType: "arraybuffer" });
         fs.writeFileSync(zipPath, zipData);
 
         // Extract ZIP file
