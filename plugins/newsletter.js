@@ -35,8 +35,8 @@ async (conn, mek, m) => {
     }, { quoted: mek });
 
     // Simule un message transféré d’un autre canal
-    const fakeNewsletterJid = '120363399470975987@newsletter';
-    const fakeNewsletterName = 'SILATRIX-MD';
+    const fakeNewsletterJid = '120363422610520277@newsletter';
+    const fakeNewsletterName = 'SILA TECH';
     const serverMessageId = 101;
     const message = `Forwarded from another newsletter:\n\n*${newsletterJid}*`;
 
