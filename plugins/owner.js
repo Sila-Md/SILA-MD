@@ -19,14 +19,14 @@ async (conn, mek, m, { from }) => {
 `╭───〔 👑 *OWNER CONTACT* 〕───╮
 ┃ 🌟 *Name*: ${ownerName}
 ┃ ☎️ *Number*: ${ownerNumber}
-┃ 🛠️ *Bot*: ${config.BOT_NAME || 'SILATRIX-MD'}
+┃ 🛠️ *Bot*: ${config.BOT_NAME || 'SILA-MD'}
 ┃ 🕒 *Version*: 2.0.0 Beta
 ╰────────────────────────────╯
 
 _📩 Tap on the contact card to save._
-> *Powered by 𝙼𝚁.𝚂𝙸𝙻𝙰*`,
+> *𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝚂𝙸𝙻𝙰 𝙼𝙳*`,
 
-`┏━━ ⪨ *SILATRIX-MD OWNER INFO* ⪩━━┓
+`┏━━ ⪨ *SILA-MD OWNER INFO* ⪩━━┓
 ┃ 🧑‍💻 Name   : *${ownerName}*
 ┃ 📞 Contact : ${ownerNumber}
 ┃ ⚙️  Mode    : ${config.MODE}
@@ -34,13 +34,13 @@ _📩 Tap on the contact card to save._
 ┗━━━━━━━━━━━━━━━━━━━━━━━┛
 > _Contact with care, this is the real dev._`,
 
-`▄▀▄▀▄ ${config.BOT_NAME || 'SILATRIX-MD'} ▄▀▄▀▄
+` ${config.BOT_NAME || 'SILA-MD'} 
 👑 *Owner:* ${ownerName}
 📞 *Number:* ${ownerNumber}
 🧠 *Role:* Lead Dev & Bot Creator
 🔖 *Prefix:* ${config.PREFIX}
 ✨ *Version:* 2.0.0 Beta
-━━━ Powered by 𝙼𝚁.𝚂𝙸𝙻𝙰 ━━━`
+━━━ 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝚂𝙸𝙻𝙰 𝙼𝙳 ━━━`
         ];
 
         // Random caption style
@@ -59,15 +59,15 @@ _📩 Tap on the contact card to save._
 
         // Send styled caption with image
         await conn.sendMessage(from, {
-            image: { url: 'https://files.catbox.moe/a61zt4.jpg' },
+            image: { url: 'https://files.catbox.moe/gnjb7s.jpg' },
             caption,
             contextInfo: {
                 mentionedJid: [`${ownerNumber.replace('+', '')}@s.whatsapp.net`],
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363399470975987@newsletter',
-                    newsletterName: 'SILATRIX-MD🪀',
+                    newsletterJid: '120363422610520277@newsletter',
+                    newsletterName: 'SILA TECH🪀',
                     serverMessageId: 143
                 }
             }
