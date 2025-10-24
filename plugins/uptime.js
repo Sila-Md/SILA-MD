@@ -36,7 +36,7 @@ async (conn, mek, m, { from, reply, args }) => {
 ┃│♢ sɪɴᴄᴇ: ${startTime.toLocaleDateString()}
 ┃╰╼════════════┈⊷
 ╰╼═══════════════╾╯
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙼𝚁.𝚂𝙸𝙻𝙰*`,
+> *𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝚂𝙸𝙻𝙰 𝙼𝙳*`,
 
 `╭╼━━━━━━━━━━━━━━╾╮
 │        *⟬ UPTIME STATUS ⟭*  
@@ -46,22 +46,22 @@ async (conn, mek, m, { from, reply, args }) => {
 ││ • sᴛᴀʀᴛᴇᴅ: ${startTime.toLocaleString()}
 │╰┅┅┅┅┅┅┅┅┅┅┅┈⊷
 ╰╼━━━━━━━━━━━━━━╾╯
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙼𝚁.𝚂𝙸𝙻𝙰*`,
+> *𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝚂𝙸𝙻𝙰 𝙼𝙳*`,
 
 `╭╼┅⧼ 🅤🅟🅣🅘🅜🅔 ⧽┉╾╮
 ┋ ⏳ ${uptime}
 ┋ 🕰️ ${startTime.toLocaleString()}
 ┋ 🔢 ${seconds} sᴇᴄᴏɴᴅs
 ╰╼┉┅┉┅┉┅┉┅┉┅┉╍┅╾╯
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙼𝚁.𝚂𝙸𝙻𝙰*`,
+> *𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝚂𝙸𝙻𝙰 𝙼𝙳*`,
 
 `╭╼═══════════════╾╮
-║  *RAHEEM-XMD 𝑼𝑷𝑻𝑰𝑴𝑬*
+║  *𝚂𝙸𝙻𝙰 𝙼𝙳 𝑼𝑷𝑻𝑰𝑴𝑬*
 ║  ʀᴜɴᴛɪᴍᴇ: ${uptime}
 ║  sᴇᴄᴏɴᴅs:: ${seconds}
 ║  sɪɴᴄᴇʀᴇʟʏ: ${startTime.toLocaleString()}
 ╰════════════════╾╯
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙼𝚁.𝚂𝙸𝙻𝙰`,
+> *𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝚂𝙸𝙻𝙰 𝙼𝙳*`,
 
 `> ╭━━━━━━━━━━━━━━╾╮
 > ┃⏱️ *UᎮTIMᏋ ᎦTᏘTUᎦ* ⏱️
@@ -69,10 +69,10 @@ async (conn, mek, m, { from, reply, args }) => {
 > ┃🔢 sᴇᴄᴏɴᴅs: ${seconds}
 > ┃📅 sɪɴᴄᴇ: ${startTime.toLocaleString()}
 > ╰━━━━━━━━━━━━━━╾╯
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙼𝚁.𝚂𝙸𝙻𝙰*`,
+> *𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝚂𝙸𝙻𝙰 𝙼𝙳*`,
 
 `╭━━━━━━━━━━━━━━━━╮
-┃  RAHEEM-XMD 𝐔𝐏𝐓𝐈𝐌𝐄  
+┃  𝚂𝙸𝙻𝙰 𝙼𝙳 𝐔𝐏𝐓𝐈𝐌𝐄  
 ┃╭┅┅┅┅┅┅┅┅┅┅┉┉┈⊷
 ┃╏◈ ᴅᴜʀᴀᴛɪᴏɴ: ${uptime}
 ┃╏◈ sᴇᴄᴏɴᴅs: ${seconds}
@@ -80,7 +80,7 @@ async (conn, mek, m, { from, reply, args }) => {
 ┃╏◈ sᴛᴀʙɪʟɪᴛʏ: 100%
 ┃╰┅┅┅┅┅┅┅┉┅┅┅┈⊷
 ╰━━━━━━━━━━━━━━━━╯
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙼𝚁.𝚂𝙸𝙻𝙰*`
+> *𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝚂𝙸𝙻𝙰 𝙼𝙳*`
         ];
 
         let selectedStyle;
@@ -96,15 +96,15 @@ async (conn, mek, m, { from, reply, args }) => {
         }
 
         await conn.sendMessage(from, {
-            image: { url: 'https://files.catbox.moe/0qywrc.jpg' },
+            image: { url: 'https://files.catbox.moe/ebj284.jpg' },
             caption: selectedStyle,
             contextInfo: {
                 mentionedJid: [m.sender],
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363399470975987@newsletter',
-                    newsletterName: '𝙼𝚁.𝚂𝙸𝙻𝙰',
+                    newsletterJid: '120363422610520277@newsletter',
+                    newsletterName: 'SILA TECH',
                     serverMessageId: 143
                 }
             }
