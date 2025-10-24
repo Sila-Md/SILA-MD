@@ -1,7 +1,7 @@
 const config = require('../config');
 const { cmd } = require('../command');
 
-const MUSIC_URL = "https://files.catbox.moe/o919rq.mp3"; // Customize if needed
+const MUSIC_URL = "https://files.catbox.moe/ebj284.jpg"; // Customize if needed
 
 cmd({
     pattern: "ping",
@@ -42,7 +42,7 @@ async (conn, mek, m, { from, sender, reply }) => {
 ┃ 🛸 *LATENCY:* ${responseTime.toFixed(2)}s
 ┃ 🎯 *OWNER:* ${config.OWNER_NAME}
 ┗━━━━━━━━━━━━━━━━━━━━━┛
-> *Powered by 𝙼𝚁.𝚂𝙸𝙻𝙰*`,
+> *𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝚂𝙸𝙻𝙰 𝙼𝙳*`,
 
 `⏱️ *Response Time:* *${responseTime.toFixed(2)} seconds*
 🤖 Bot: *${config.BOT_NAME}*
@@ -60,8 +60,8 @@ async (conn, mek, m, { from, sender, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363399470975987@newsletter',
-                    newsletterName: config.BOT_NAME || 'SILATRIX-MD',
+                    newsletterJid: '120363422610520277@newsletter',
+                    newsletterName: config.BOT_NAME || 'SILA TECH',
                     serverMessageId: 143
                 }
             }
