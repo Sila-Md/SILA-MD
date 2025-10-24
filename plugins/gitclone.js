@@ -43,7 +43,7 @@ cmd({
     const fileName = contentDisposition ? contentDisposition.match(/filename=(.*)/)[1] : `${repo}.zip`;
 
     // Notify user of the download
-    reply(`📥 *Downloading repository...*\n\n*Repository:* ${username}/${repo}\n*Filename:* ${fileName}\n\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ RAHEEM-CM*`);
+    reply(`📥 *Downloading repository...*\n\n*Repository:* ${username}/${repo}\n*Filename:* ${fileName}\n\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚂𝙸𝙻𝙰-𝚃𝙴𝙲𝙷*`);
 
     // Send the zip file to the user with custom contextInfo
     await conn.sendMessage(from, {
@@ -56,7 +56,7 @@ cmd({
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363399470975987@newsletter',
-          newsletterName: 'RAHEEM-XMD-3',
+          newsletterName: '𝚂𝙸𝙻𝙰𝚃𝚁𝙸𝚇-𝙼𝙳',
           serverMessageId: 143
         }
       }

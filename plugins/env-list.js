@@ -26,7 +26,7 @@ async (conn, mek, m, { from, quoted, reply, isOwner }) => {
         const isEnabled = (value) => value && value.toString().toLowerCase() === "true";
 
         let envSettings = `
-╭───『 *RAHEEM-XMD-3 CONFIG* 』───❏
+╭───『 *𝚂𝙸𝙻𝙰𝚃𝚁𝙸𝚇-𝙼𝙳 CONFIG* 』───❏
 │
 ├─❏ *🤖 BOT INFO*
 │  ├─∘ *Name:* ${config.BOT_NAME}
@@ -73,7 +73,7 @@ async (conn, mek, m, { from, quoted, reply, isOwner }) => {
 │  ├─∘ *Anti-Del Path:* ${config.ANTI_DEL_PATH}
 │  └─∘ *Dev Number:* ${config.DEV}
 │
-╰───『 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ RAHEEM CM* 』───❏
+╰───『 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚂𝙸𝙻𝙰 𝚃𝙴𝙲𝙷* 』───❏
 `;
 
         await conn.sendMessage(

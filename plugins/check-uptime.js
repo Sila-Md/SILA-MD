@@ -120,7 +120,7 @@ ${config.DESCRIPTION}`;
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363399470975987@newsletter',
-                    newsletterName: config.OWNER_NAME || 'RAHEEM-XMD-3',
+                    newsletterName: config.OWNER_NAME || 'SILATRIX-MD',
                     serverMessageId: 143
                 }
             }

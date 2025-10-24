@@ -30,8 +30,8 @@ cmd({
 
         let buffer = await getBuffer(imageUrl);
         let sticker = new Sticker(buffer, {
-            pack: "༺𒋲✟⃟͠♻️𝐃𝐄𝐕 RAHEEM-CM👻❂𒋲",
-            author: "RAHEEM-CM",
+            pack: "༺𒋲✟⃟͠♻️𝚂𝙸𝙻𝙰 𝚃𝙴𝙲𝙷👻❂𒋲",
+            author: "𝙼𝚛.𝚂𝚒𝚕𝚊",
             type: StickerTypes.FULL,
             categories: ["🤩", "🎉"],
             quality: 75,

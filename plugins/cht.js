@@ -39,7 +39,7 @@ module.exports = {
                 body: JSON.stringify({
                     model: "gpt-3.5-turbo", // You can try other models like "gpt-4o" if available
                     messages: [
-                        { role: "system", content: "You are a helpful assistant for a WhatsApp bot named RAHEEM-XMD-3." },
+                        { role: "system", content: "You are a helpful assistant for a WhatsApp bot named SILATRIX-MD." },
                         { role: "user", content: userQuery }
                     ]
                 })

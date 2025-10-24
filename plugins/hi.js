@@ -13,8 +13,8 @@ async (conn, mek, m, { from, sender, reply }) => {
     try {
         // Owner information (you can modify these values)
         const ownerInfo = {
-            name: "Raheem-cm",
-            number: "+255763111390",
+            name: "𝚂𝚒𝚕𝚊 𝚃𝚎𝚌𝚑",
+            number: "+255789661031",
             photo: "https://files.catbox.moe/far7x9.jpg",
             bio: "The creator of this amazing bot"
         };

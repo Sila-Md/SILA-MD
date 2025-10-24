@@ -49,7 +49,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363399470975987@newsletter',
-                        newsletterName: "RAHEEM-XMD-3",
+                        newsletterName: "𝚂𝙸𝙻𝙰𝚃𝚁𝙸𝚇-𝙼𝙳",
                         serverMessageId: 143
                     }
                 }

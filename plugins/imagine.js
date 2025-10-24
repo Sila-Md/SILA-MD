@@ -27,7 +27,7 @@ cmd({
 
     await conn.sendMessage(m.chat, {
       image: imageBuffer,
-      caption: `> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ RAHEEM CM* 🚀\n✨ Prompt: *${q}*`
+      caption: `> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙼𝚁.𝚂𝙸𝙻𝙰* 🚀\n✨ Prompt: *${q}*`
     });
 
   } catch (error) {
@@ -61,7 +61,7 @@ cmd({
 
     await conn.sendMessage(m.chat, {
       image: imageBuffer,
-      caption: `> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ RAHEEM CM*🚀\n✨ Prompt: *${q}*`
+      caption: `> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙼𝚁.𝚂𝙸𝙻𝙰*🚀\n✨ Prompt: *${q}*`
     });
 
   } catch (error) {
@@ -95,7 +95,7 @@ cmd({
 
     await conn.sendMessage(m.chat, {
       image: imageBuffer,
-      caption: `> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ RAHEEM CM*🚀\n✨ Prompt: *${q}*`
+      caption: `> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙼𝚁.𝚂𝙸𝙻𝙰*🚀\n✨ Prompt: *${q}*`
     });
 
   } catch (error) {

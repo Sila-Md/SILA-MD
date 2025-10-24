@@ -38,7 +38,7 @@ const gdata = `*╭╼━━⪨ GROUP INFO ⪩━━╾╮*
 *┃📝GROUP DESCRIPTION* - ${metadata.desc?.toString() || 'undefined'}\n
 *┃🛡️GROUP ADMINS* - \n${listAdmin}\n
 *╰╼━━━━━━━━━━━━━━━╾╯*
-> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ RAHEEM CM*`
+> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚂𝙸𝙻𝙰-𝚃𝙴𝙲𝙷*`
 
 await conn.sendMessage(from,{image:{url: ppUrl },caption: gdata },{quoted:mek })
 } catch (e) {

@@ -24,7 +24,7 @@ cmd({
         let menuText = `╭───『 * COMMAND LIST* 』───⳹
 │
 │    *BOT INFORMATION*
-│ •   Bot Name: *RAHEEM-XMD-3*
+│ •   Bot Name: *𝚂𝙸𝙻𝙰𝚃𝚁𝙸𝚇-𝙼𝙳*
 │ •   Owner: ${config.OWNER_NAME}
 │ •   Prefix: [${config.PREFIX}]
 │ •   Platform: GITHUB 

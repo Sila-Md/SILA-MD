@@ -12,7 +12,7 @@ cmd({
   try {
     const userName = m.pushName || 'User';
     const menuCaption = `
-╭━⪨ RAHEEM-XMD-3 ⪩━┈⊷🇹🇿
+╭━⪨ 𝚂𝙸𝙻𝙰𝚃𝚁𝙸𝚇-𝙼𝙳 ⪩━┈⊷🇹🇿
 ├ Owner: ${config.OWNER_NAME}
 ├ Type: NodeJs (MD)
 ├ Mode: ${config.MODE}
@@ -42,7 +42,7 @@ cmd({
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: '120363398101781980@newsletter',
-        newsletterName: 'RAHEEM CM',
+        newsletterName: '𝙼𝚁.𝚂𝙸𝙻𝙰',
         serverMessageId: 143
       }
     };

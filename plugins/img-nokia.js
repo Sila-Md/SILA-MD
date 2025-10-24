@@ -75,7 +75,7 @@ cmd({
 
     await conn.sendMessage(m.chat, {
       image: imageBuffer,
-      caption: `> *Powered by raheem-cm*`
+      caption: `> *Powered by 𝙼𝚁.𝚂𝙸𝙻𝙰*`
     });
 
   } catch (error) {
