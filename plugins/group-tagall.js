@@ -52,7 +52,7 @@ async (conn, mek, m, { from, participants, reply, isGroup, senderNumber, groupAd
             teks += `${randomEmoji} @${mem.id.split('@')[0]}\n`;
         }
 
-        teks += "*└╼┉┉┉┉✪ 𝚂𝙸𝙻𝙰𝚃𝚁𝙸𝚇-𝙼𝙳 ✪┉┉┉┉*";
+        teks += "*└╼┉┉┉┉✪ 𝚂𝙸𝙻𝙰 𝙼𝙳 ✪┉┉┉┉*";
 
         conn.sendMessage(from, { text: teks, mentions: participants.map(a => a.id) }, { quoted: mek });
  
