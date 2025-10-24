@@ -34,7 +34,7 @@ ${config.DESCRIPTION}`;
   •——[ ${config.BOT_NAME} ]——•`;
 
         // Style 3: Fancy Borders
-        const style3 = `▄▀▄▀▄ BOT UPTIME ▄▀▄▀▄
+        const style3 = ` BOT UPTIME 
 
   ♢ Running: ${uptime}
   ♢ Since: ${startTime.toLocaleDateString()}
@@ -119,8 +119,8 @@ ${config.DESCRIPTION}`;
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363399470975987@newsletter',
-                    newsletterName: config.OWNER_NAME || 'SILATRIX-MD',
+                    newsletterJid: '120363422610520277@newsletter',
+                    newsletterName: config.OWNER_NAME || 'SILA TECH',
                     serverMessageId: 143
                 }
             }
