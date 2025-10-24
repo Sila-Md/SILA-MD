@@ -41,7 +41,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/a97zm1.jpg` }, // Replace with privacy-themed image if available
+                image: { url: `https://files.catbox.moe/gwuzwl.jpg` }, // Replace with privacy-themed image if available
                 caption: privacyMenu,
                 contextInfo: {
                     mentionedJid: [m.sender],
