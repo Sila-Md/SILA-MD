@@ -24,7 +24,7 @@ cmd({
         let menuText = `╭───『 * COMMAND LIST* 』───⳹
 │
 │    *BOT INFORMATION*
-│ •   Bot Name: *𝚂𝙸𝙻𝙰𝚃𝚁𝙸𝚇-𝙼𝙳*
+│ •   Bot Name: *𝚂𝙸𝙻𝙰-𝙼𝙳*
 │ •   Owner: ${config.OWNER_NAME}
 │ •   Prefix: [${config.PREFIX}]
 │ •   Platform: GITHUB 
@@ -73,7 +73,7 @@ cmd({
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/a97zm1.jpg` },
+                image: { url: `https://files.catbox.moe/gwuzwl.jpg` },
                 caption: menuText,
                 contextInfo: {
                     mentionedJid: [m.sender],
