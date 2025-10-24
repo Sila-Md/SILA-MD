@@ -14,8 +14,8 @@ async (conn, mek, m, { from, sender, reply }) => {
         // Owner information (you can modify these values)
         const ownerInfo = {
             name: "𝚂𝚒𝚕𝚊 𝚃𝚎𝚌𝚑",
-            number: "+255789661031",
-            photo: "https://files.catbox.moe/far7x9.jpg",
+            number: "+255612491554",
+            photo: "https://files.catbox.moe/gwuzwl.jpg",
             bio: "The creator of this amazing bot"
         };
 
@@ -48,6 +48,6 @@ async (conn, mek, m, { from, sender, reply }) => {
     } catch (e) {
         console.error("Creator Command Error:", e);
         // Fallback text if image fails
-        await reply(`👑 *Creator Info*\n\nName: Abdulrahim\nNumber: +255763111390\n\nContact for bot support!`);
+        await reply(`👑 *Creator Info*\n\nName: SILA\nNumber: +255612491554\n\nContact for bot support!`);
     }
 });
