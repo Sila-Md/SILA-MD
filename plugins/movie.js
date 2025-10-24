@@ -62,8 +62,8 @@ async (conn, mek, m, { from, reply, sender, args }) => {
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363399470975987@newsletter',
-                        newsletterName: 'SILATRIX-MD',
+                        newsletterJid: '120363422610520277@newsletter',
+                        newsletterName: 'SILA TECH',
                         serverMessageId: 143
                     }
                 }
