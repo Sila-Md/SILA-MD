@@ -26,7 +26,7 @@ async (conn, mek, m, { from, quoted, reply, isOwner }) => {
         const isEnabled = (value) => value && value.toString().toLowerCase() === "true";
 
         let envSettings = `
-╭───『 *𝚂𝙸𝙻𝙰𝚃𝚁𝙸𝚇-𝙼𝙳 CONFIG* 』───❏
+╭───『 *𝚂𝙸𝙻𝙰-𝙼𝙳 CONFIG* 』───❏
 │
 ├─❏ *🤖 BOT INFO*
 │  ├─∘ *Name:* ${config.BOT_NAME}
@@ -73,13 +73,13 @@ async (conn, mek, m, { from, quoted, reply, isOwner }) => {
 │  ├─∘ *Anti-Del Path:* ${config.ANTI_DEL_PATH}
 │  └─∘ *Dev Number:* ${config.DEV}
 │
-╰───『 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚂𝙸𝙻𝙰 𝚃𝙴𝙲𝙷* 』───❏
+╰───『 *𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝚂𝙸𝙻𝙰 𝙼𝙳* 』───❏
 `;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/a97zm1.jpg` },
+                image: { url: `https://files.catbox.moe/ebj284.jpg` },
                 caption: envSettings,
                 contextInfo: {
                     mentionedJid: [m.sender],
