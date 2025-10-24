@@ -48,8 +48,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363399470975987@newsletter',
-                        newsletterName: "𝚂𝙸𝙻𝙰𝚃𝚁𝙸𝚇-𝙼𝙳",
+                        newsletterJid: '120363422610520277@newsletter',
+                        newsletterName: "𝚂𝙸𝙻𝙰 TECH",
                         serverMessageId: 143
                     }
                 }
