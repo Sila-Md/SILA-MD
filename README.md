@@ -25,7 +25,7 @@
 <br>
 
 <div align="center">
-  <img src="https://files.catbox.moe/jwmx1j.jpg" width="200" height="200" style="border-radius:50%;border: 3px solid #00ffff;box-shadow: 0 0 30px #00ffff, 0 0 50px #0080ff;">
+  <img src="https://files.catbox.moe/36vahk.png" width="200" height="200" style="border-radius:50%;border: 3px solid #00ffff;box-shadow: 0 0 30px #00ffff, 0 0 50px #0080ff;">
 </div>
 
 <br>
@@ -51,7 +51,7 @@
 [![Deploy on Heroku](https://img.shields.io/badge/☁️_DEPLOY_ON_HEROKU-430098?style=for-the-badge&logo=heroku&logoColor=white)](https://heroku.com/deploy)
 [![Deploy on Render](https://img.shields.io/badge/🚀_DEPLOY_ON_RENDER-46a2b1?style=for-the-badge&logo=render&logoColor=white)](https://render.com/deploy)
 [![KataBump](https://img.shields.io/badge/🔗_KATABUMP-0080ff?style=for-the-badge&logo=link&logoColor=white)](https://dashboard.katabump.com/auth/login#38a45a)
-[![Pair Code](https://img.shields.io/badge/🔐_PAIR_CODE-00ffff?style=for-the-badge&logo=code&logoColor=black)](https://sila-sessions-site.onrender.com)
+[![Pair Code](https://img.shields.io/badge/🔐_PAIR_CODE-00ffff?style=for-the-badge&logo=code&logoColor=black)](https://sila-md-pairing-site.onrender.com)
 
 </div>
 
