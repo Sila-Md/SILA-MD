@@ -5,12 +5,12 @@ async function pairCommand(sock, chatId, message, q) {
     try {
         if (!q) {
             return await sock.sendMessage(chatId, {
-                text: "Please provide valid WhatsApp number\nExample: .pair 91702395XXXX",
+                text: "Please provide valid WhatsApp number\nExample: .pair 255612XXXX",
                 contextInfo: {
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363422610520277@newsletter',
+                        newsletterJid: '120363402325089913@newsletterr',
                         newsletterName: 'SILA MD',
                         serverMessageId: -1
                     }
@@ -29,7 +29,7 @@ async function pairCommand(sock, chatId, message, q) {
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363422610520277@newsletter',
+                        newsletterJid: '120363402325089913@newsletter',
                         newsletterName: 'SILA MD',
                         serverMessageId: -1
                     }
@@ -48,7 +48,7 @@ async function pairCommand(sock, chatId, message, q) {
                         forwardingScore: 1,
                         isForwarded: true,
                         forwardedNewsletterMessageInfo: {
-                            newsletterJid: '120363422610520277@newsletter',
+                            newsletterJid: '120363402325089913@newsletter',
                             newsletterName: 'SILA MD',
                             serverMessageId: -1
                         }
@@ -62,7 +62,7 @@ async function pairCommand(sock, chatId, message, q) {
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363422610520277@newsletter',
+                        newsletterJid: '120363402325089913@newsletter',
                         newsletterName: 'SILA MD',
                         serverMessageId: -1
                     }
@@ -70,7 +70,7 @@ async function pairCommand(sock, chatId, message, q) {
             });
 
             try {
-                const response = await axios.get(`https://sila-md-paircode.onrender.com/code?number=${number}`);
+                const response = await axios.get(`https://sila-md-pairing-site.onrender.com/code?number=${number}`);
                 
                 if (response.data && response.data.code) {
                     const code = response.data.code;
@@ -85,7 +85,7 @@ async function pairCommand(sock, chatId, message, q) {
                             forwardingScore: 1,
                             isForwarded: true,
                             forwardedNewsletterMessageInfo: {
-                                newsletterJid: '120363422610520277@newsletter',
+                                newsletterJid: '120363402325089913@newsletter',
                                 newsletterName: 'SILA MD',
                                 serverMessageId: -1
                             }
@@ -106,7 +106,7 @@ async function pairCommand(sock, chatId, message, q) {
                         forwardingScore: 1,
                         isForwarded: true,
                         forwardedNewsletterMessageInfo: {
-                            newsletterJid: '120363422610520277@newsletter',
+                            newsletterJid: '120363402325089913@newsletter',
                             newsletterName: 'SILA MD',
                             serverMessageId: -1
                         }
@@ -122,7 +122,7 @@ async function pairCommand(sock, chatId, message, q) {
                 forwardingScore: 1,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363422610520277@newsletter',
+                    newsletterJid: '120363402325089913@newsletter',
                     newsletterName: 'SILA MD',
                     serverMessageId: -1
                 }
