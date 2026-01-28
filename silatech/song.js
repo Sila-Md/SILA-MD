@@ -196,6 +196,7 @@ async function songCommand(sock, chatId, message) {
 				finalMimetype = 'audio/mpeg';
 				finalExtension = 'mp3';
 			} catch (convErr) {
+				console.error(`Conversion failed for ${detectedFormat}:`, convErr);
 				throw new Error(`Failed to convert ${detectedFormat} to MP3: ${convErr.message}`);
 			}
 		}
