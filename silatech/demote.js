@@ -1,5 +1,14 @@
 const isAdmin = require('../lib/isAdmin');
 
+// Helper function to safely extract JID string
+const extractJidString = (jid) => {
+    if (!jid) return '';
+    if (typeof jid === 'string') return jid;
+    if (typeof jid === 'object' && jid.id) return jid.id;
+    if (typeof jid === 'object' && jid.toString) return jid.toString();
+    return '';
+};
+
 async function demoteCommand(sock, chatId, mentionedJids, message) {
     try {
         // First check if it's a group
@@ -57,25 +66,42 @@ async function demoteCommand(sock, chatId, mentionedJids, message) {
         // Add delay to avoid rate limiting
         await new Promise(resolve => setTimeout(resolve, 1000));
 
-        await sock.groupParticipantsUpdate(chatId, userToDemote, "demote");
+        // Extract JID strings from all demotion targets
+        const userJids = userToDemote
+            .map(u => extractJidString(u))
+            .filter(jid => jid && jid.includes('@'));
+
+        if (userJids.length === 0) {
+            await sock.sendMessage(chatId, { 
+                text: '❌ Invalid user format. Please mention a valid user.'
+            });
+            return;
+        }
+
+        await sock.groupParticipantsUpdate(chatId, userJids, "demote");
         
         // Get usernames for each demoted user
-        const usernames = await Promise.all(userToDemote.map(async jid => {
-            return `@${jid.split('@')[0]}`;
-        }));
+        const usernames = userJids.map(jid => {
+            const username = jid.split('@')[0];
+            return `@${username || 'unknown'}`;
+        });
 
         // Add delay to avoid rate limiting
         await new Promise(resolve => setTimeout(resolve, 1000));
 
-        const demotionMessage = `*『 GROUP DEMOTION 』*\n\n` +
-            `👤 *Demoted User${userToDemote.length > 1 ? 's' : ''}:*\n` +
-            `${usernames.map(name => `• ${name}`).join('\n')}\n\n` +
-            `👑 *Demoted By:* @${message.key.participant ? message.key.participant.split('@')[0] : message.key.remoteJid.split('@')[0]}\n\n` +
-            `📅 *Date:* ${new Date().toLocaleString()}`;
+        const demotionMessage = `*┏━❑ 𝗚𝗥𝗢𝗨𝗣 𝗗𝗘𝗠𝗢𝗧𝗜𝗢𝗡 ━━━━━━━━━━
+┃
+┃ 👤 𝗨𝘀𝗲𝗿${userJids.length > 1 ? '𝘀' : ''} 𝗗𝗲𝗺𝗼𝘁𝗲𝗱:
+${usernames.map(name => `┃ ⤷ ${name}`).join('\\n')}
+┃
+┃ 👑 𝗗𝗲𝗺𝗼𝘁𝗲𝗱 𝗕𝘆: @${message.key.participant ? message.key.participant.split('@')[0] : message.key.remoteJid.split('@')[0]}
+┃ 📅 𝗗𝗮𝘁𝗲: ${new Date().toLocaleString()}
+┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`;
         
         await sock.sendMessage(chatId, { 
             text: demotionMessage,
-            mentions: [...userToDemote, message.key.participant || message.key.remoteJid]
+            mentions: userJids
         });
     } catch (error) {
         console.error('Error in demote command:', error);
@@ -108,22 +134,39 @@ async function handleDemotionEvent(sock, groupId, participants, author) {
             return;
         }
 
+        if (!Array.isArray(participants)) {
+            console.error('Invalid participants format:', participants);
+            return;
+        }
+
+        // Convert all participants to JID strings
+        const participantJids = participants.map(p => extractJidString(p)).filter(jid => jid && jid.includes('@'));
+        
+        if (participantJids.length === 0) {
+            console.error('No valid participants found');
+            return;
+        }
+
         // Add delay to avoid rate limiting
         await new Promise(resolve => setTimeout(resolve, 1000));
 
         // Get usernames for demoted participants
-        const demotedUsernames = await Promise.all(participants.map(async jid => {
-            return `@${jid.split('@')[0]}`;
-        }));
+        const demotedUsernames = participantJids.map(jidString => {
+            const username = jidString.split('@')[0];
+            return `@${username || 'unknown'}`;
+        });
 
         let demotedBy;
-        let mentionList = [...participants];
+        let mentionList = participantJids;
 
-        if (author && author.length > 0) {
-            // Ensure author has the correct format
-            const authorJid = author;
-            demotedBy = `@${authorJid.split('@')[0]}`;
-            mentionList.push(authorJid);
+        if (author) {
+            const authorJid = extractJidString(author);
+            if (authorJid && authorJid.includes('@')) {
+                demotedBy = `@${authorJid.split('@')[0]}`;
+                mentionList = [...participantJids, authorJid];
+            } else {
+                demotedBy = 'System';
+            }
         } else {
             demotedBy = 'System';
         }
@@ -131,11 +174,13 @@ async function handleDemotionEvent(sock, groupId, participants, author) {
         // Add delay to avoid rate limiting
         await new Promise(resolve => setTimeout(resolve, 1000));
 
-        const demotionMessage = `*『 GROUP DEMOTION 』*\n\n` +
-            `👤 *Demoted User${participants.length > 1 ? 's' : ''}:*\n` +
-            `${demotedUsernames.map(name => `• ${name}`).join('\n')}\n\n` +
-            `👑 *Demoted By:* ${demotedBy}\n\n` +
-            `📅 *Date:* ${new Date().toLocaleString()}`;
+        const demotionMessage = `*┏━❑ 𝗚𝗥𝗢𝗨𝗣 𝗗𝗘𝗠𝗢𝗧𝗜𝗢𝗡 ━━━━━━━━━━
+┃ 👤 𝗗𝗲𝗺𝗼𝘁𝗲𝗱 𝗨𝘀𝗲𝗿${participantJids.length > 1 ? '𝘀' : ''}:
+${demotedUsernames.map(name => `┃ ⤷ ${name}`).join('\\n')}
+┃
+┃ 👑 𝗗𝗲𝗺𝗼𝘁𝗲𝗱 𝗕𝘆: ${demotedBy}
+┃ 📅 𝗗𝗮𝘁𝗲: ${new Date().toLocaleString()}
+┗━━━━━━━━━━━━━━━━━━━━━━━━`;
         
         await sock.sendMessage(groupId, {
             text: demotionMessage,
