@@ -4,7 +4,7 @@ const settings = {
   author: 'Sir.Sila',
   botName: "SILA MD",
   botOwner: 'SILA',
-  ownerNumber: '255772346413',
+  ownerNumber: '256773465307',
   
   // Bot Version & Mode
   version: "1.0.0",
