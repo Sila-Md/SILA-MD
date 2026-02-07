@@ -1,10 +1,10 @@
 const settings = {
   // Bot Basic Info
-  packname: 'SILA MD',
-  author: 'Sir.Sila',
-  botName: "SILA MD",
-  botOwner: 'SILA',
-  ownerNumber: '255772346413',
+  packname: 'hacher,
+  author: 'hacher,
+  botName: "hacher",
+  botOwner: 'hacher,
+  ownerNumber: '256774412506',
   
   // Bot Version & Mode
   version: "1.0.0",
