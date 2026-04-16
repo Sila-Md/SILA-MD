@@ -1,10 +1,10 @@
 FROM node:lts-buster
 
 # Clone bot from GitHub
-RUN git clone https://github.com/codertz26-code/usb.git /root/usb
+RUN git clone https://github.com/Sila-Md/SILA-MD.git /root/SILA-MD
 
 # Set working directory
-WORKDIR /root/usb
+WORKDIR /root/SILA-MD
 
 # Install dependencies
 RUN npm install && npm install -g pm2
