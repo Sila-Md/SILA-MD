@@ -16,7 +16,7 @@
 ### 🔗 Essential Links (Start Here)
 
 <p align="center">
-  <a href="https://sila-md-sessions-26ea9c5d8dd1.herokuapp.com/">
+  <a href="https://asila-smd-sessions-47104bc985f7.herokuapp.com/">
     <img src="https://img.shields.io/badge/🔑_GET_PAIR_CODE-FF6B6B?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Get Pair Code">
   </a>
 </p>
