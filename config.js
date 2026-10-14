@@ -49,8 +49,7 @@ ANTI_LINK: process.env.ANTI_LINK || "true",
 MENTION_REPLY: process.env.MENTION_REPLY || "false",
 // 𝘁𝗿𝘂𝗲 𝗳𝗼𝗿 𝗮𝘂𝘁𝗼 𝘃𝗼𝗶𝗰𝗲 𝗿𝗲𝗽𝗹𝘆 𝘄𝗵𝗲𝗻 𝗺𝗲𝗻𝘁𝗶𝗼𝗻𝗲𝗱
 
-MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://files.catbox.moe/i4aqjo.png",
-// 𝗰𝘂𝘀𝘁𝗼𝗺 𝗺𝗲𝗻𝘂 & 𝗺𝗲𝗻𝘁𝗶𝗼𝗻 𝗿𝗲𝗽𝗹𝘆 𝗶𝗺𝗮𝗴𝗲
+MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "htt// 𝗰𝘂𝘀𝘁𝗼𝗺 𝗺𝗲𝗻𝘂 & 𝗺𝗲𝗻𝘁𝗶𝗼𝗻 𝗿𝗲𝗽𝗹𝘆 𝗶𝗺𝗮𝗴𝗲
 
 PREFIX: process.env.PREFIX || ".",
 // 𝗯𝗼𝘁 𝗰𝗼𝗺𝗺𝗮𝗻𝗱 𝗽𝗿𝗲𝗳𝗶𝘅
@@ -59,10 +58,10 @@ AUTO_BIO: process.env.AUTO_BIO || "false",
 TIME_ZONE: process.env.TIME_ZONE || "Africa/Dar_es_Salaam",  // 𝗖𝗵𝗮𝗻𝗴𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝘁𝗶𝗺𝗲𝘇𝗼𝗻𝗲
 // 𝗮𝘂𝘁𝗼-𝗯𝗶𝗼 𝗳𝗲𝗮𝘁𝘂𝗿𝗲 𝘀𝗲𝘁𝘁𝗶𝗻𝗴𝘀
 
-BOT_NAME: process.env.BOT_NAME || "𝐒𝐈𝐋𝐀-𝐌𝐃",
+BOT_NAME: process.env.BOT_NAME || "Ahmed 
 // 𝗯𝗼𝘁 𝗻𝗮𝗺𝗲 𝗳𝗼𝗿 𝗺𝗲𝗻𝘂
 
-STICKER_NAME: process.env.STICKER_NAME || "𝐒𝐈𝐋𝐀-𝐌𝐃",
+STICKER_NAME: process.env.STICKER_NAME || "Ahmed 
 // 𝘀𝘁𝗶𝗰𝗸𝗲𝗿 𝗽𝗮𝗰𝗸 𝗻𝗮𝗺𝗲
 
 CUSTOM_REACT: process.env.CUSTOM_REACT || "false",
@@ -74,10 +73,10 @@ CUSTOM_REACT_EMOJIS: process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️�
 DELETE_LINKS: process.env.DELETE_LINKS || "false",
 // 𝗮𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗰𝗮𝗹𝗹𝘆 𝗱𝗲𝗹𝗲𝘁𝗲 𝗹𝗶𝗻𝗸𝘀 𝘄𝗶𝘁𝗵𝗼𝘂𝘁 𝗿𝗲𝗺𝗼𝘃𝗶𝗻𝗴 𝗺𝗲𝗺𝗯𝗲𝗿
 
-OWNER_NUMBER: process.env.OWNER_NUMBER || "255768978061,255789661031",
+OWNER_NUMBER: process.env.OWNER_NUMBER || "201011525068
 // 𝗯𝗼𝘁 𝗼𝘄𝗻𝗲𝗿 𝗻𝘂𝗺𝗯𝗲𝗿(𝘀) - 𝘁𝗲𝗻𝗴𝗮𝗻𝗶𝘀𝗵𝗮 𝗸𝘄𝗮 𝗸𝗼𝗺𝗮 (,) 𝗸𝗶𝘄𝗮 𝘇𝗮𝗶𝗱𝗶 𝗬𝗔 𝗠𝗠𝗢𝗝𝗔
 
-OWNER_NAME: process.env.OWNER_NAME || "𝐒𝐈𝐋𝐀-𝐌𝐃",
+OWNER_NAME: process.env.OWNER_NAME || ",Ahmed 
 // 𝗯𝗼𝘁 𝗼𝘄𝗻𝗲𝗿 𝗻𝗮𝗺𝗲
 
 DESCRIPTION: process.env.DESCRIPTION || "*> © 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 𝐒𝐢𝐥𝐚 𝐓𝐞𝐜𝐡*",
@@ -86,7 +85,7 @@ DESCRIPTION: process.env.DESCRIPTION || "*> © 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁
 ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/36vahk.png",
 // 𝗮𝗹𝗶𝘃𝗲 𝗺𝗲𝘀𝘀𝗮𝗴𝗲 𝗶𝗺𝗮𝗴𝗲
 
-LIVE_MSG: process.env.LIVE_MSG || "> 𝐒𝐈𝐋𝐀-𝐌𝐃",
+LIVE_MSG: process.env.LIVE_MSG || "> Ahmed,
 // 𝗮𝗹𝗶𝘃𝗲 𝗺𝗲𝘀𝘀𝗮𝗴𝗲
 
 READ_MESSAGE: process.env.READ_MESSAGE || "false",
@@ -122,7 +121,7 @@ AUTO_TYPING: process.env.AUTO_TYPING || "true",
 READ_CMD: process.env.READ_CMD || "false",
 // 𝘁𝗿𝘂𝗲 𝗶𝗳 𝘄𝗮𝗻𝘁 𝘁𝗼 𝗺𝗮𝗿𝗸 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗮𝘀 𝗿𝗲𝗮𝗱
 
-DEV: process.env.DEV || "255768978061",
+DEV: process.env.DEV || "201011525068,
 // 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 𝘄𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗻𝘂𝗺𝗯𝗲𝗿
 
 ANTI_VV: process.env.ANTI_VV || "true",

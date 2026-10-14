@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h1 align="center">🤖 SILA-MD | WhatsApp Bot</h1>
+<h1 align="center">🤖 Ahmed | WhatsApp Bot</h1>
 
 <p align="center">
   <a href="https://github.com/Sila-Md/SILA-MD/stargazers"><img src="https://img.shields.io/github/stars/Sila-Md/SILA-MD?style=social" alt="Stars"></a>

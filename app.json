@@ -1,5 +1,5 @@
 {
-  "name": "SILA-MD",
+  "name": "Ahmed,
   "description": "WhatsApp bot made by Sila Md",
   "logo": "https://files.catbox.moe/36vahk.png",
   "keywords": ["SILA-MD"],
@@ -88,7 +88,7 @@
    
      }, 
     
-    "OWNER_NAME": {
+    "OWNER_NAME": {Ahmed 
       "description": "Type Bot Owner Name.",
       "required": false,
       "value": "SILA-MD"
@@ -97,7 +97,7 @@
     "OWNER_NUMBER": {
       "description": "put the owner number for bot.",
       "required": false,
-      "value": "255789661031"
+      "value": "201011525068
 
     }, 
 
